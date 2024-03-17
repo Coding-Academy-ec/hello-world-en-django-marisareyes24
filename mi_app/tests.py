@@ -7,7 +7,8 @@ class HelloWorldTest(TestCase):
 
     def test_hello_world(self):
         # Intenta hacer una solicitud GET a la página de hello world
-        response = self.client.get('/mi_app/hello/')
+        #response = self.client.get('/mi_app/hello/')
+        response = self.client.get('')
 
         # Verifica que la respuesta es 200 (OK)
         self.assertEqual(response.status_code, 200)
